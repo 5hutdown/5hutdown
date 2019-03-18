@@ -1,0 +1,9 @@
+a = open('ip.txt', mode = 'r')
+for k in a:
+	k2 = k.rstrip()
+	print("config rule"+"\n"+
+		"option name"+"'"+k2+"'"+"\n"
+		"option src '*'"+"\n"+
+		"option dest 'wan'"+"\n"
+		"option dest_ip "+"'"+k2+"'"+"\n"
+		"option target 'DROP'","\n")
